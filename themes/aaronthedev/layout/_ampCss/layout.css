@@ -1,0 +1,25 @@
+/* Styles for the layout.ejs file */
+
+.c-layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  width: 100%;
+  padding: 10px;
+}
+
+.c-layout__header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-layout__header > img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: block;
+  width: 200px;
+  height: 200px;
+}

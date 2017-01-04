@@ -1,0 +1,19 @@
+<html ⚡>
+<html>
+  <!-- Inject our head -->
+  <%- partial('_partials/head.ejs') %>
+  <body>
+      <div class="c-layout">
+          <!-- Header of the website-->
+          <div class="c-layout__header">
+              <h1><%= config.author %></h1>
+              <% if(config.subtitle) { %>
+                    <p><%= config.subtitle %></p>
+              <% } %>
+              <img src="/images/aaronTheDev.png" alt="Aaron The Dev Avatar"></img>
+          </div>
+
+          <%- body %>
+      </div>
+  </body>
+</html>

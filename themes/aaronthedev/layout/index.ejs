@@ -1,0 +1,25 @@
+<div class="c-index">
+  <!-- List of available posts -->
+  <div class="c-index__posts">
+      <ul class="c-index__posts__list">
+      <% page.posts.each(function(post){ %>
+          <li class="c-index__posts__list__post">
+              <h3>
+                  <a href="<%- url_for(post.path) %>">
+                      <%= post.title %>
+                  </a>
+              </h3>
+              <div>
+                  <%= date(post.date, config.date_format) %>
+              </div>
+
+              <% if(post.excerpt) { %>
+                  <p>
+                      <%- post.excerpt %>
+                  </p>
+              <% } %>
+          </li>
+      <% }) %>
+      </ul>
+  </div>
+</div>
